@@ -1,0 +1,6 @@
+type readlogsdaemoncpp, domain;
+type readlogsdaemoncpp_exec, vendor_file_type, exec_type, file_type;
+init_daemon_domain(readlogsdaemoncpp)
+
+allow readlogsdaemoncpp logdr_socket:sock_file write;
+allow readlogsdaemoncpp logd:unix_stream_socket connectto;

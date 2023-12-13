@@ -1,0 +1,8 @@
+// Android.bp
+cc_binary {
+    name: "read_logs_daemon_cpp",
+    srcs: ["read_logs_daemon_cpp.cpp"],
+    shared_libs: ["liblog"],
+    init_rc: ["read_logs_daemon_cpp.rc"],
+    vendor: true,
+}

@@ -1,0 +1,5 @@
+service read_logs_daemon_cpp /vendor/bin/read_logs_daemon_cpp
+    class main
+    user system
+    group system
+    oneshot
